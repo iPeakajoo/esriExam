@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    width: 960px;
+    margin: 0 auto;
+    height: auto;
+    margin-top: 20px;
+}
+.flex-content{
+    display: flex;
+    gap: 20px;
+    justify-content:space-between;
+}
+.side-menu-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+    width:25%;
+    height:auto;
+}
+
+ul{
+    padding: 20px;
+}
+
+ul>li{
+    padding-bottom: 10px;
+    
+    
+}
+ul>li>a{
+       color: black;         
+}
+
+ul>li>a:hover{
+    background: gray;
+    color: white;
+}
+.sendNews{
+    padding: 20px; 
+    background: black;
+    color: white;
+}
+.content{
+    background: rgb(255, 255, 255);
+    flex-grow: 1;
+}
+.side-menu-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+    width:25%;
+    height:auto;
+}
+.sec-1{
+    display: flex;
+    gap: 10px;
+}
+.logo{
+    width: 50%;
+    padding: 20px;
+}
+.news01{
+    border: 1px solid black;
+    width: 50%;
+    padding: 10px;
+}
+.sec-2{
+    margin-top: 10px;
+}
+.news02{
+    border: 1px solid black;
+    width: 100%;
+    padding: 10px;
+}
+.news03{
+
+    width: 100%;
+    padding: 10px; 
+   
+}
+.advert{
+    padding: 20px; 
+    background: black;
+    color: white;
+
+}
+    </style>
+    
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="flex-content">
+            <div class="side-menu-left">
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">NEWS</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">MEMBER</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                    <div><h6 class="sendNews">ส่งเรื่องร้องเรียน</h6></div>
+            </div>
+
+            <div class="content">
+                <div class="sec-1">
+                    <img src="./imgs/logo-esrith.svg" alt="" class="logo">
+                    <div class="news01">
+                        <h2>New1</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, alias molestias necessitatibus odio.</p>
+                    </div>
+                </div>
+                <div class="sec-2">
+                    <div class="news02">
+                        <h2>New2</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, alias molestias necessitatibus odio.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, alias molestias necessitatibus odio.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, alias molestias necessitatibus odio.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, alias molestias necessitatibus odio.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="side-menu-right">
+                <div class="sec-3">
+                    <div class="news03">
+                        <h2>New3</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, alias molestias necessitatibus odio.</p>
+                    </div>
+                    
+                </div>
+                <div class="sec-4">
+                    <div class="advert">โฆษณา</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
